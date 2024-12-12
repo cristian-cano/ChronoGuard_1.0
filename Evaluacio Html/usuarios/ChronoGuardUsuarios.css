@@ -1,0 +1,229 @@
+:root {
+    --blanco: #FFFCE8;
+    --azul: #00c8ff;
+    --negro: black;
+    --cian: #e6faff;
+    --gris: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cian);
+    color: var(--negro);
+}
+
+.contenedor-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.barra-lateral {
+    width: 250px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .opcion {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu .opcion:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--gris);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--negro);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: var(--cian);
+    color: var(--negro);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--azul);
+    outline: none;
+}
+
+button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 1px solid var(--azul);
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--gris);
+}
+
+tbody tr:hover {
+    background-color: var(--cian);
+    cursor: pointer;
+}
+
+/* Estilos para formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--negro);
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: var(--cian);
+    color: var(--negro);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: var(--azul);
+    outline: none;
+}
+
+form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 1px solid var(--azul);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--negro);
+}
+
+.contenido-principal {
+    padding: 20px;
+    background-color: var(--gris);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para el encabezado principal */
+.encabezado {
+    background-color: var(--azul); /* Puedes ajustar los colores según tu paleta */
+    color: var(--blanco);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

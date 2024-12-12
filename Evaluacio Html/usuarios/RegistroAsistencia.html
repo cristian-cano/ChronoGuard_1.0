@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia - ChronoGuard</title>
+    <link rel="stylesheet" href="ChronoGuardUsuarios.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>LAVANDERÍA MILENIO</h1>
+    </header>
+    
+    <div class="contenedor-dashboard">
+        <aside class="barra-lateral">
+            <div class="logo">
+                <img src="LogoChronoguard (1) (1).png" alt="Logo ChronoGuard" width="90" height="90">
+                <h2>Empleado</h2>
+            </div>
+            <nav class="menu">
+                <a href="RegistroAsistencia.html" class="opcion"><span class="material-icons">schedule</span> Gestión de AsistenciaRegistro de Asistencia</a>
+                <a href="ConsultarHorarios.html" class="opcion"><span class="material-icons">edit_calendar</span>Consulta de Horarios</a>
+                <a href="Solicitudes.html" class="opcion"><span class="material-icons">hourglass_empty</span></span>Solicitudes</a>
+                <a href="HistorialPersonal.html" class="opcion"><span class="material-icons">history_edu</span>Historial Personal</a>
+                <a href="Notificaciones.html" class="opcion"> <span class="material-icons">notifications</span>Notificaciones</a>
+                <a href="/Evaluacio Html/IndexChronoGuard.html" class="opcion"><span class="material-icons">logout</span>Salir</a>
+                
+            </nav>
+        </aside>
+        <main class="contenido-principal">
+            <h1>Registro de Asistencia</h1>
+            <form>
+                <label for="accion">Acción:</label>
+                <select id="accion" name="accion">
+                    <option value="entrada">Marcar Entrada</option>
+                    <option value="salida">Marcar Salida</option>
+                </select>
+                <button type="submit">Registrar</button>
+            </form>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
