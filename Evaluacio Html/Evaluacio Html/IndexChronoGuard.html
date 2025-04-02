@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/Ecaluacio Htmliniciosesion.html">
     <link rel="stylesheet" href="/Evaluacio Html/registro.html">
     <link rel="icon" href="img/logoCHGcircul.png">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+   
     <script src="https://kit.fontawesome.com/a0994db117.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +25,50 @@
 </head>
 <body>
 
-<header>
-    
-    <div class="titulo1">
-        <img src="img/logoCHGcircul.png" alt="">
-    <h2>ChronoGuard</h2>
-    <div class="botones"> 
-        <div class="bot">
-        <button onClick="location.href = '#login' ">Iniciar Sesión</button>
-        <button onClick="location.href = '/Evaluacio Html/registro.html'">Registrarse</button>
-    </div>
-    </div> 
-    </div>
-   
-        <div class="titulo2">
-            <h1>Lavanderia Milenio Bogotá</h1>
+ <header class="text-center text-white d-flex align-items-center justify-content-center" style="height: 60vh; background: rgba(0, 0, 0, 0.5);">
+    <div>
+        
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="titulo1">
+                <img src="img/logoCHGcircul.png" alt="">
+            
+        
+            </div>
+          <a class="navbar-brand" href="#">ChronoGuard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mascotas">¿Quienes Somos?    </a>
+              </li>
+                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Cotacto</a>
+              </li>
+            </ul>
+            <div class="botones"> 
+                <div class="bot">
+                <button onClick="location.href = '#login' ">Iniciar Sesión</button>
+                <button onClick="location.href = '/Evaluacio Html/registro.html'">Registrarse</button>
+            </div>
+            </div> 
+          </div>
         </div>
- </header>
+      </nav>
+        
+        <h1 class="fw-bold">Lavandería Milenio Bogotá</h1>
+        
+                  
+    </div>
+</header>
 
  <section class="bienvenido">
     <div class="hero">
@@ -141,7 +170,7 @@
     
         <script src="js/modal.js"></script>
         <script src="js/validacion.js"></script>
-
+        <script src="JS/bootstrap.min.js"></script>
    
 
 
