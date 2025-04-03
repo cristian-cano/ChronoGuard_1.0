@@ -1,148 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notificaciones - ChronoGuard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ChronoGuardUsuarios.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <header class="encabezado">
+    <header class="encabezado text-white text-center py-3">
         <h1>LAVANDERÍA MILENIO</h1>
     </header>
-    <div class="contenedor-dashboard">
-        <aside class="barra-lateral">
-            <div class="logo">
-                <img src="LogoChronoguard (1) (1).png" alt="Logo ChronoGuard" width="90" height="90">
-                <h2>Empleado</h2>
-            </div>
-            <nav class="menu">
-                <a href="RegistroAsistencia.html" class="opcion"><span class="material-icons">schedule</span> Gestión de AsistenciaRegistro de Asistencia</a>
-                <a href="ConsultarHorarios.html" class="opcion"><span class="material-icons">edit_calendar</span>Consulta de Horarios</a>
-                <a href="Solicitudes.html" class="opcion"><span class="material-icons">hourglass_empty</span></span>Solicitudes</a>
-                <a href="HistorialPersonal.html" class="opcion"><span class="material-icons">history_edu</span>Historial Personal</a>
-                <a href="Notificaciones.html" class="opcion"> <span class="material-icons">notifications</span>Notificaciones</a>
-                <a href="/Evaluacio Html/IndexChronoGuard.html" class="opcion"><span class="material-icons">logout</span>Salir</a>
-                
-            </nav>
-        </aside>
-        <main class="contenido-principal">
-            <h1>Notificaciones</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Asunto</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-12</td>
-                        <td>Permiso no aprobado</td>
-                        <td>Leído</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-20</td>
-                        <td>Permiso aprobado</td>
-                        <td>Leído</td>
-                    </tr><tr>
-                        <td>2024-12-28</td>
-                        <td>Permiso no aprobado</td>
-                        <td>Leído</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Turno modificado</td>
-                        <td>Pendiente</td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="bg-dark text-white p-3"
+            style="width: 250px; min-height: 100vh;">
+                <div class="text-center">
+                    <img src="LogoChronoguard (1) (1).png" alt="Logo ChronoGuard" class="img-fluid rounded-circle mb-3" width="90" height="90">
+                    <h2>Empleado</h2>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="RegistroAsistencia.html" class="nav-link text-white"><span class="material-icons">schedule</span> Gestión de Asistencia</a></li>
+                    <li class="nav-item"><a href="ConsultarHorarios.html" class="nav-link text-white"><span class="material-icons">edit_calendar</span> Consulta de Horarios</a></li>
+                    <li class="nav-item"><a href="Solicitudes.html" class="nav-link text-white"><span class="material-icons">hourglass_empty</span> Solicitudes</a></li>
+                    <li class="nav-item"><a href="HistorialPersonal.html" class="nav-link text-white"><span class="material-icons">history_edu</span> Historial Personal</a></li>
+                    <li class="nav-item"><a href="Notificaciones.html" class="nav-link text-white"><span class="material-icons">notifications</span> Notificaciones</a></li>
+                    <li class="nav-item"><a href="/Evaluacio Html/IndexChronoGuard.html" class="nav-link text-danger"><span class="material-icons">logout</span> Salir</a></li>
+                </ul>
+            </aside>
+            <main class="col-md-9 p-4">
+                <h1 class="mb-4">Notificaciones</h1>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Asunto</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>2024-12-05</td><td class="text-warning">Turno modificado</td><td class="text-warning">Pendiente</td></tr>
+                            <tr><td>2024-12-12</td><td class="text-danger">Permiso no aprobado</td><td class="text-success">Leído</td></tr>
+                            <tr><td>2024-12-20</td><td class="text-success">Permiso aprobado</td><td class="text-success">Leído</td></tr>
+                            <tr><td>2024-12-28</td><td class="text-danger">Permiso no aprobado</td><td class="text-success">Leído</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
-
 </body>
 </html>
