@@ -63,8 +63,11 @@ body {
     flex: 1;
     padding: 20px;
     background-color: var(--gris);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Adaptaciones para formularios con Bootstrap */
 form {
     display: flex;
     flex-direction: column;
@@ -99,7 +102,7 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
-button {
+button{
     align-self: flex-start;
     padding: 10px 20px;
     background-color: var(--azul);
@@ -118,9 +121,8 @@ button:hover {
     border: 1px solid var(--azul);
 }
 
-/* Estilos para tablas */
-table {
-    width: 100%;
+/* Estilos para tablas con Bootstrap */
+table.table {
     border-collapse: collapse;
     margin-top: 20px;
     background-color: var(--blanco);
@@ -149,81 +151,13 @@ tbody tr:hover {
     cursor: pointer;
 }
 
-/* Estilos para formularios */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background-color: var(--blanco);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-form label {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--negro);
-}
-
-form input, form select, form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: var(--cian);
-    color: var(--negro);
-    transition: border-color 0.3s ease;
-}
-
-form input:focus, form select:focus, form textarea:focus {
-    border-color: var(--azul);
-    outline: none;
-}
-
-form button {
-    align-self: flex-start;
-    padding: 10px 20px;
-    background-color: var(--azul);
-    color: var(--blanco);
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: var(--blanco);
-    color: var(--negro);
-    border: 1px solid var(--azul);
-}
-
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: var(--negro);
-}
-
-.contenido-principal {
-    padding: 20px;
-    background-color: var(--gris);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* Estilo para el encabezado principal */
-.encabezado {
-    background-color: var(--azul); /* Puedes ajustar los colores según tu paleta */
-    color: var(--blanco);
+/* Encabezado principal */
+.encabezado{
+    background-color: var(--azul) !important;
+    color: var(--blanco) !important;
     text-align: center;
     padding: 15px 0;
     font-size: 24px;
     font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
