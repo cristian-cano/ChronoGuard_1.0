@@ -1,4 +1,5 @@
 const modal = document.getElementById('login-modal'); 
+const modalElement = new bootstrap.Modal(modal);
 const buttons = document.querySelectorAll("button[onClick*='login']"); 
 const closeModal = document.querySelector('.modal .close'); 
 
