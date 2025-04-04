@@ -48,7 +48,7 @@ document.querySelector('.btn-ingresar').addEventListener('click', function (even
         }).then((result) => {
             if (result.isConfirmed) {
                 // Solo redirigir si el usuario confirma la alerta
-                window.location.href = '/usuarios/ConsultarHorarios.html'; 
+                window.location.href = './chronoGuard/usuarios/Solicitudes.html'; 
             }
         });
     } 
@@ -62,3 +62,4 @@ document.querySelector('.btn-ingresar').addEventListener('click', function (even
         });
     }
 });
+
