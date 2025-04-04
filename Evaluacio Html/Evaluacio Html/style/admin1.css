@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(/ChronoGuard/img/pngwing.com\ \(13\).png);
+    background-image: url(../img/13263.jpg);
     text-align: center;
 }
 
@@ -56,6 +56,14 @@ button {
 button:hover {
     background-color: rgb(110, 238, 232);
     transform: scale(1.05);
+}
+
+.out{
+    display: flex;
+    justify-content:right ;
+    margin-right: 35px;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
 
