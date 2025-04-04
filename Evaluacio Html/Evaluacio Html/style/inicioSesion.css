@@ -81,15 +81,12 @@ input {
 
 }
 
-.btn-ingresar:hover{
-    transform: scale(2.5s);
+.btn-ingresar:hover {
     background: white;
     color: black;
-    transition: transform 0.6
-    backround-color 0.6;
     border: 2px solid;
     transform: scale(1.07);
-    transition: transform 0.8s;
+    transition: transform 0.8s, background-color 0.6s;
 }
 
 .close {
