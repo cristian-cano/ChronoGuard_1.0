@@ -1,13 +1,6 @@
-*{
-   margin: 0%;
-   padding: 0%;
+);  
+    
 }
-body{
-    background-image: url(/ChronoGuard/img/ilustracion-abstracta-piscina-ondulada-costura-vectorial-horizontal-verticalmente-repetible_8130-2107.jpg);
-}
-
-
-   
 
 .titulo2 h1{
     
@@ -15,17 +8,16 @@ body{
     display: flex;
     justify-content: center;
     text-align:center ;
-    color: white;
-    
+    color: white;    
 }
-
 
 header{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 10px;
     padding: 10px;
-    
+    background: linear-gradient(150deg, rgb(106, 174, 230),rgb(20, 66, 104), rgb(20, 66, 104), rgb(134, 195, 245) ) ;
+    max-height: 300px;
 }
 header h2{
     color: #007bff;
@@ -33,6 +25,9 @@ header h2{
     font-size: large;
 }
 
+header .fw-bold{
+    margin-top: 35px;
+}
 
 h1{
     font-size: 3rem;
@@ -42,7 +37,7 @@ h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifz;
     
 }
-header button{
+header .botones button{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -50,8 +45,8 @@ header button{
     max-width: 150px;   
     font-size: 20px;
     align-items: center;
-    background-color:  #00c8ff;
-    color: rgb(99, 59, 59);
+    background-color:  #ffffff;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     float: right;
     margin: 10px;
@@ -62,10 +57,10 @@ header button{
 
 }
 
-button:hover{
+.botones button:hover{
     transform: scale(2.5s);
-    background-color: white;
-    color: black;
+    background-color: rgb(35, 136, 219);
+    color: rgb(255, 255, 255);
     transition: transform 0.6
     backround-color 0.6;
     transform: scale(1.07);
@@ -147,8 +142,8 @@ button:hover{
 
 .bot button:hover{
     transform: scale(2.5s);
-    background: white;
-    color: black;
+    background: #a3c2b5;
+    color: rgb(0, 0, 0);
     transition: transform 0.6
     backround-color 0.6;
     border: 2px solid;
@@ -160,7 +155,7 @@ button:hover{
 .botones{
     display: flex;
     justify-content: right;
-    margin-left: 788px;
+    margin-left: 360px;
 }
 
 .bot{
@@ -172,8 +167,12 @@ button:hover{
 }
 
 section{
-    margin: 19px;
-    text-align: center;
+    display: flex;
+   justify-content: center;
+    width: 600px;
+    height: 430px;
+    margin-left: 370px ;
+    margin-top: 100px;
 }
 
 section .bienvenido{
@@ -183,6 +182,21 @@ section .bienvenido{
     text-align: center;
     padding: 30px;
     
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 .hero{
@@ -273,9 +287,24 @@ section .hero p{
 }
 .fila2 p{
     text-align: justify;
-    background: rgb(255, 254, 254);
+    background: rgb(255, 255, 255);
 }
 .fila strong{
     background: rgb(255, 254, 254); 
 }
+
+.container-fluid{
+    background: #a3c2b5;
+    margin-left: 5%;
+}
+
+.navbar-brand{
+    margin-left: 48px;
+}
+
+.nav-item{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
 
