@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/app/static/Admin/img/logoCHGcircul.png">
+    <link rel="stylesheet" href="/app/templates/IndexChronoGuard.html">
+    <link rel="stylesheet" href="/app/static/Admin/style/registro.css">
+    <link rel="stylesheet" href="/app/static/Admin/JS/validacion.js">
+    <link rel="stylesheet" href="/app/static/Admin/style/modal.css">
+    <link rel="stylesheet" href="/app/templates/Admin/admin1.html">
+
+</head>
+<body>
+    <div class="bot">
+        <button onClick="location.href = '#login' ">Iniciar Seision</button>
+        <button onclick="location.href = '#registro'">Registrarse</button></div>
+
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>      
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" id="email" placeholder="ingresa tu correo" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingresa Tu contraseña" required>    
+                    <button type="submit" class="btn-ingresar">Ingresar</button>
+                    
+                    <div class="options">
+                        <a href="#" class="olvido">¿olvidó su contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>    
+        
+    <script src="/app/static/Admin/JS/admin1.js"></script>
+    <script src="/app/static/Admin/JS/validacion.js"></script>
+</body>
+</html>

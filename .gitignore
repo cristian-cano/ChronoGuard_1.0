@@ -1,0 +1,13 @@
+# Ignorar entorno virtual
+mi_entorno/
+env/
+venv/
+
+# Archivos de Python a ignorar
+*.pyc
+__pycache__/
+
+# Configuraciones del sistema o IDE
+.vscode/
+.DS_Store
+Thumbs.db
