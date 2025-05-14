@@ -1,0 +1,30 @@
+:root{
+    --blanco: #FFFCE8;
+    --azul: #00c8ff;
+    --negro: black;
+}
+
+.modal{
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--negro);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-content{
+    background-color: var(--blanco);
+    padding: 20%;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow:var(--azul) ;
+    text-align: center;
+    position: relative;
+    margin-left: 33%;
+    margin-top: 10%;
+}

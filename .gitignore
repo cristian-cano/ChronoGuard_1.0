@@ -1,0 +1,36 @@
+# Ignorar entorno virtual
+mi_entorno/
+env/
+venv/
+
+# Archivos de Python a ignorar
+*.pyc
+__pycache__/
+
+# Configuraciones del sistema o IDE
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Crear el entorno virtual 
+py/python -m venv venv 
+
+#Activa el entorno virtual
+venv\Scripts\activate -- source venv/Scripts/activate
+
+# instalar requirements
+pip install -r requirements.txt
+
+# Ejecutar el codigo
+python run.py
+
+
+# instalar flask pymysql
+pip install flask pymysql
+
+# set FLASK_APP=run.py 
+# pip install flask
+# pip list
+# pip install pymysql
+
+.qodo

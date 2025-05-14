@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Reportes - ChronoGuard</title>
+    <link rel="icon" href="../static/Admin/img/logoCHGcircul.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Secret/css/secretaria.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="contenedor-dashboard">
+        <aside class="barra-lateral">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='Secret/img/logoCHGcircul.png') }}" alt="Logo ChronoGuard" width="90" height="90">
+                <h2>Secretaría</h2>
+            </div>
+            <nav class="menu">
+                <a href="{{ url_for('main.secretaria_dashboard') }}" class="opcion">
+                    <span class="material-icons">schedule</span>
+                    Gestión de Asistencia
+                </a>
+                <a href="{{ url_for('main.gestion_turnos') }}" class="opcion">
+                    <span class="material-icons">edit_calendar</span>
+                    Gestión de Turnos
+                </a>
+                <a href="{{ url_for('main.enviar_notificaciones') }}" class="opcion">
+                    <span class="material-icons">notifications</span>
+                    Enviar Notificaciones
+                </a>
+                <a href="{{ url_for('main.generar_reportes') }}" class="opcion">
+                    <span class="material-icons">insert_chart</span>
+                    Generar Reportes
+                </a>
+                <a href="{{ url_for('main.home') }}" class="opcion">
+                    <span class="material-icons">logout</span>
+                    Salir
+                </a>
+            </nav>
+        </aside>
+        <main class="contenido-principal">
+            
+            <h1>Generar Reportes</h1>
+            <form>
+                <label for="tipo-reporte">Tipo de Reporte:</label>
+                <select id="tipo-reporte" name="tipo-reporte">
+                    <option value="asistencia">Reporte de Asistencia</option>
+                    <option value="turnos">Reporte de Turnos</option>
+                </select>
+                <label for="fecha-inicio">Fecha Inicio:</label>
+                <input type="date" id="fecha-inicio" name="fecha-inicio">
+                <label for="fecha-fin">Fecha Fin:</label>
+                <input type="date" id="fecha-fin" name="fecha-fin">
+                <button type="submit" class="boton-pdf">
+                    <span class="material-icons">bar_chart</span> Generar
+                </button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

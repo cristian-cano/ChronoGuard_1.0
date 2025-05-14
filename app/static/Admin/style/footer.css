@@ -1,0 +1,54 @@
+.fot{
+    background-image: url(../img/226e52f4-96bb-4a77-a85b-03dbe3d2e0dd.jpg);
+}
+footer {
+    width: 100%;
+    margin-bottom: 100px;
+    height: 170px;
+    background-size: cover;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    gap: 100px;   
+    background-image: url(/ChronoGuard/img/226e52f4-96bb-4a77-a85b-03dbe3d2e0dd.jpg);
+    padding:40px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
+
+.box h2{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.box a{
+    color: white;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.box img{
+    
+    width: 20px;
+}
+
+.derechos{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}   

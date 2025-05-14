@@ -1,0 +1,179 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>ChronoGuard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/dash.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/Admin/style/modal.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/Admin/style/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/inicioSesion.css') }}">
+    <link rel="stylesheet" href="../templates/Admin/admin1.html">
+    <link rel="stylesheet" href="../templates/iniciosesion.html">
+    <link rel="icon" href="../static/Admin/img/logoCHGcircul.png">
+    <link rel="stylesheet" href="../static/Admin/style/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a0994db117.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <script src="../static/Admin/JS/validacion.js"></script>
+
+</head>
+<body>
+
+ <header class="text-center text-white d-flex align-items-center justify-content-center" style="height: 60vh; background: rgba(0, 0, 0, 0.5);">
+    <div>
+        
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="titulo1">
+                <img src="./static/Admin/img/logoCHGcircul.png" alt="">
+            
+        
+            </div>
+          <a class="navbar-brand" href="#">ChronoGuard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mascotas">¿Quienes Somos?    </a>
+              </li>
+                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+            <div class="botones"> 
+                <div class="bot">
+                    <svg id="login-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16" style="cursor: pointer;">
+                        <a href="#login-modal"></a>
+                       
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                      </svg>                      
+            </div>
+            </div> 
+          </div>
+        </div>
+      </nav>
+        
+        <h1 class="fw-bold">Lavandería Milenio Bogotá</h1>
+        
+                  
+    </div>
+</header>
+
+ <section class="bienvenido">
+    <img src="../static/Admin/img/hands-businessman-student-filling-application-form.jpg" alt="">
+    <img src="../static/Admin/img/group-people-working-out-business-plan-office.jpg" alt="">
+    <img src="../static/Admin/img/team-working-together-project.jpg" alt="">
+    <img src="../static/Admin/img/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working.jpg" alt="">
+    <img src="../static/Admin/img/labor-union-members-working-together.jpg" alt="">
+    <img src="../static/Admin/img/people-using-digital-device-while-meeting.jpg" alt="">
+ </section>
+    
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                 <span class="close">&times;</span>      
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" id="email" placeholder="ingresa tu correo" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingresa Tu contraseña" required>    
+                    <button type="submit" class="btn-ingresar">Ingresar</button>
+                    
+                </form>
+            </div>
+        </div> 
+        
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="tarjetas" id="mascotas">
+        <div class="card">
+            <div class="fila1">
+                <img src="../static/Secret/img/pngwing.com (8).png" alt="">
+            </div>
+            <div class="fila2">
+                
+                <h2>Alcanzando Nuevas Alturas</h2>
+                <p>En la lavandería Milenio Bogotá, valoramos el talento humano como nuestro recurso más valioso. Presentamos <strong>ChronoGuard</strong>, un software innovador para gestionar nuestros recursos humanos.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="fila1">
+                <img src="../static/Secret/img/pngwing.com (5).png" alt="">
+            </div>
+            <div class="fila2">
+                
+                <h2>Entorno Laboral Eficiente</h2>
+                <p>Con <strong>ChronoGuard</strong>, buscamos crear un entorno laboral más eficiente y motivador, alineado con nuestros objetivos de crecimiento y excelencia en la empresa.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="fila1">
+                <img src="../static/Secret/img/pngwing.com (9).png" alt="">
+            </div>
+            <div class="fila2">
+                <h2>Creciendo Juntos Con ChronoGuard</h2>
+                <p>Juntos, alcanzaremos nuevas alturas, asegurando que cada paso esté respaldado por una gestión de recursos humanos sólida y confiable en nuestra organización.</p>
+
+            </div>
+        </div>
+        </div>
+
+        <footer>
+            <div class="contacto" id="contacto">
+                <div class="box">
+                    <h2>Redes Sociales</h2>
+                    <a target="_blank">
+                        <i class="instagram "><img src="./static/Admin/ChronoGuard/img/pngwing.com (11).png" alt=""></i>
+                        @lavanderia_milenio
+                    </a>
+                    <a target="_blank">
+                        <i class="facebook "><img src="./static/Admin/ChronoGuard/img/pngwing.com (12).png" alt=""></i>
+                        @Lavanderia Milenio
+                    </a>
+                    </div>
+                    <div class="box">
+                        <h2>Contacto</h2> 
+                    <a>
+                        <img src="./static/Adminimg/call_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> 
+                        +601-7902054
+                    </a>
+                    <a target="_blank">
+                        <img src="./static/Adminimg/stacked_email_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        Recursoshumanos@ChronoGuard.com
+                    </a>
+                </div>
+                
+            
+            </div>
+        
+        <div class="derechos">© 2024 Lavanderia Milenio Bogotá. Todos los derechos reservados. </div>
+        </footer>
+        
+        
+        
+        <script src="../static/Admin/JS/modal.js"></script>
+        <script src="../static/Admin/JS/validacion.js"></script>
+        <script src="../static/Admin/JS/bootstrap.min.js"></script>
+</body>
+</html>
+
+   
+
+<link rel="stylesheet" href="/app/templates/Admin/">
+</body>
+</html>

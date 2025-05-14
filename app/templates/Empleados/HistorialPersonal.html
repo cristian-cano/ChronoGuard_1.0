@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Personal - ChronoGuard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/Empleados/ChronoGuardUsuarios.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="{{ url_for('static', filename='Admin/img/logoCHGcircul.png') }}">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="encabezado text-white text-center py-3">
+        <h1>LAVANDERÍA MILENIO</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="bg-dark text-white p-3"
+            style="width: 250px; min-height: 100vh;">
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='/Empleados/LogoChronoguard (1) (1).png') }}" alt="Logo ChronoGuard" class="img-fluid rounded-circle mb-3" width="90" height="90">
+                    <h2 class="mt-2">Empleado</h2>
+                </div>
+                <nav class="nav flex-column">
+                    <a href="{{ url_for('main.gestion_asistencia') }}" class="nav-link text-white"><span class="material-icons">schedule</span> Gestión de Asistencia</a>
+                    <a href="{{ url_for('main.gestion_horarios') }}" class="nav-link text-white"><span class="material-icons">edit_calendar</span> Consulta de Horarios</a>
+                    <a href="{{ url_for('main.Solicitudes') }}" class="nav-link text-white"><span class="material-icons">hourglass_empty</span> Solicitudes</a>
+                    <a href="{{ url_for('main.historial') }}" class="nav-link text-white"><span class="material-icons">history_edu</span> Historial Personal</a>
+                    <a href="{{ url_for('main.notif') }}" class="nav-link text-white"><span class="material-icons">notifications</span> Notificaciones</a>
+                    <a href="{{ url_for('main.home') }}" class="nav-link text-danger"><span class="material-icons">logout</span> Salir</a>
+                </nav>
+            </aside>
+            <main class="col-md-9 p-4">
+                <h1 class="mb-4">Historial Personal</h1>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Hora Entrada</th>
+                                <th>Hora Salida</th>
+                                <th>Horas Trabajadas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr><td>llaves de DB</td><td>llaves de DB</td><td>llaves de DB</td><td>llaves de DB</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='/Empleados/scripts.js') }}"></script>
+</body>
+</html>
